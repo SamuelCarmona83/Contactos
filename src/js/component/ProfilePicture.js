@@ -16,13 +16,7 @@ export const ProfilePicture = ({ full_name, img }) => {
             aspectRatio: "1:1"
           }}
         />
-        <h1
-          className="h1 text-center"
-          style={{
-            textTransform: "capitalize"
-          }}>
-          {full_name}
-        </h1>
+        <h1 className="h1 text-center">{full_name}</h1>
       </div>
     </div>
   );

@@ -8,26 +8,26 @@ const getState = ({ getStore, getActions, setStore }) => {
           email: "rola@gmail.com",
           full_name: "rolando",
           id: 54020484048,
-          phone: "0424"
+          phone: "04120173072"
         },
         {
           address: "filadelfia",
           agenda_slug: "celu",
-          email: "asdfsd@gmail.com",
-          full_name: "jaun",
+          email: "mombola@gmail.com",
+          full_name: "mom",
           id: 9143216526,
           phone: "042423231"
         },
         {
           address: "araguaney",
           agenda_slug: "celu",
-          email: "miaud@gmail.com",
-          full_name: "mias",
+          email: "mani@gmail.com",
+          full_name: "ElMani",
           id: 1944156195,
           phone: "112631"
         },
         {
-          address: "gordo",
+          address: "india",
           agenda_slug: "celu",
           email: "gordo@gmail.com",
           full_name: "gordo",

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "../../styles/home.css";
-import { Contact } from "../component/Contact";
+import { Contact } from "../component/contact";
 import { Context } from "../store/appContext";
 
 export const Home = () => {

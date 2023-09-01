@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Input = ({ data }) => {
+export const Input = ({ data, value }) => {
   return (
     <div className="my-3">
       <label htmlFor={data} className="form-label">
@@ -12,6 +12,7 @@ export const Input = ({ data }) => {
         type="text"
         id={data}
         name={data}
+        defaultValue={value}
       />
     </div>
   );

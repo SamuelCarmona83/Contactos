@@ -20,14 +20,30 @@ export const SpecificContact = () => {
         <ul
           className={window.innerWidth > 800 ? "text-center" : ""}
           style={{ listStyle: "none", padding: "0" }}>
-          <ContactData data="Address" value={specificContact.address} link="" />
-          <ContactData data="Phone" value={specificContact.phone} link="" />
-          <ContactData data="Email" value={specificContact.email} link="" />
-          <ContactData data="Id" value={specificContact.id} link="" />
+          <ContactData
+            data="Address"
+            value={specificContact.address}
+            link={`/edit-contact/${id}`}
+          />
+          <ContactData
+            data="Phone"
+            value={specificContact.phone}
+            link={`/edit-contact/${id}`}
+          />
+          <ContactData
+            data="Email"
+            value={specificContact.email}
+            link={`/edit-contact/${id}`}
+          />
+          <ContactData
+            data="Id"
+            value={specificContact.id}
+            link={`/edit-contact/${id}`}
+          />
           <ContactData
             data={
               <>
-                <i className="fa-brands fa-whatsapp"></i> Llamar a
+                <i className="fa-brands fa-whatsapp"></i> Call
               </>
             }
             value={specificContact.phone}
@@ -35,7 +51,7 @@ export const SpecificContact = () => {
           <ContactData
             data={
               <>
-                <i className="fa-brands fa-whatsapp"></i> Videollamar a
+                <i className="fa-brands fa-whatsapp"></i> Video call
               </>
             }
             value={specificContact.phone}
@@ -43,7 +59,7 @@ export const SpecificContact = () => {
           <ContactData
             data={
               <>
-                <i className="fa-brands fa-whatsapp"></i> Enviar mensaje a
+                <i className="fa-brands fa-whatsapp"></i> Send message to
               </>
             }
             value={specificContact.phone}
@@ -51,8 +67,7 @@ export const SpecificContact = () => {
           <ContactData
             data={
               <>
-                <i className="fa-solid fa-clapperboard"></i> Grabador de
-                Llamadas
+                <i className="fa-solid fa-clapperboard"></i> Call Recorder
               </>
             }
             value={specificContact.phone}
