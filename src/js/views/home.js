@@ -17,7 +17,7 @@ export const Home = () => {
             phone={contact.phone}
             email={contact.email}
             id={contact.id}
-            key={index}
+            key={index + 1}
           />
         ))}
       </div>

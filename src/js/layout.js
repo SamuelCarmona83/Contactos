@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import ScrollToTop from "./component/ScrollToTop";
 
 import { Home } from "./views/home";
@@ -23,7 +23,7 @@ const Layout = () => {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/contacts" element={<Home />} />
+            <Route path="/contacts" element={<Navigate to="/" />} />
             <Route path="/new-contact" element={<NewContact />} />
             <Route path="/edit-contact/:id" element={<EditContact />} />
             <Route path="/contacts/:id" element={<SpecificContact />} />
