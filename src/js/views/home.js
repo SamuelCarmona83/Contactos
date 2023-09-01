@@ -5,6 +5,7 @@ import { Context } from "../store/appContext";
 
 export const Home = () => {
   const { store } = useContext(Context);
+  console.log(useContext(Context));
   const contacts = store.contacts;
   return (
     <>

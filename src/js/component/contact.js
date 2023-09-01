@@ -60,36 +60,36 @@ export const Contact = ({ full_name, address, phone, email, id }) => {
         </Link>
       </div>
       <div
-        class="modal fade"
+        className="modal fade"
         id="deleteContact"
-        tabindex="-1"
+        tabIndex="-1"
         aria-labelledby="deleteContactLabel"
         aria-hidden="true"
         data-bs-backdrop="static"
         data-bs-keyboard="false">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="deleteContactLabel">
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="deleteContactLabel">
                 Delete Contact
               </h5>
               <button
                 type="button"
-                class="btn-close"
+                className="btn-close"
                 data-bs-dismiss="modal"
                 aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
               Do you want to remove {full_name} from your contacts?
             </div>
-            <div class="modal-footer">
+            <div className="modal-footer">
               <button
                 type="button"
-                class="btn btn-secondary"
+                className="btn btn-secondary"
                 data-bs-dismiss="modal">
                 Close
               </button>
-              <button type="button" class="btn btn-danger">
+              <button type="button" className="btn btn-danger">
                 Remove Contact
               </button>
             </div>
