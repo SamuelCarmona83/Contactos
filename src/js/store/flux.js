@@ -34,7 +34,9 @@ const getState = ({ getStore, getActions, setStore }) => {
           id: 12341356195,
           phone: "04124612381"
         }
-      ]
+      ].sort((a, b) => {
+        return a.full_name.localeCompare(b.full_name);
+      })
     },
     actions: {
       // Use getActions to call a function within a fuction
