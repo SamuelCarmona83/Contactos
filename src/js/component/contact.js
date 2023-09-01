@@ -6,19 +6,21 @@ export const Contact = ({ full_name, address, phone, email, id }) => {
     <>
       <div className="contact border row rounded d-flex p-2 ">
         <div className="contact__image ms-2 col-md-3 col-4 p-0">
-          <img
-            src="https://static.vecteezy.com/system/resources/previews/020/765/399/non_2x/default-profile-account-unknown-icon-black-silhouette-free-vector.jpg"
-            className="rounded-circle m-auto border border-1"
-            style={{
-              width: "100%",
-              aspectRatio: "1:1"
-            }}
-          />
+          <Link to={`/contacts/${id}`}>
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/020/765/399/non_2x/default-profile-account-unknown-icon-black-silhouette-free-vector.jpg"
+              className="rounded-circle m-auto border border-1"
+              style={{
+                width: "100%",
+                aspectRatio: "1:1"
+              }}
+            />
+          </Link>
         </div>
         <div className="contact__info mx-3 col-md-6 col-4">
           <div className="contact__name">
             <Link
-              to={`/contact/${id}`}
+              to={`/contacts/${id}`}
               className="fs-3 nombre"
               style={{
                 textTransform: "capitalize",
@@ -51,7 +53,7 @@ export const Contact = ({ full_name, address, phone, email, id }) => {
         <div className="contact__options d-flex col-md-2 col-2">
           <i className="fa-solid fa-pencil fs-4 edit mx-auto"></i>
           <i className="fa-solid fa-trash-can fs-4 delete mx-auto"></i>
-          <Link to={`/contact/${id}`} className="ms-auto">
+          <Link to={`/contacts/${id}`} className="ms-auto">
             See Contact
           </Link>
         </div>

@@ -6,7 +6,7 @@ const getState = ({ getStore, getActions, setStore }) => {
           address: "47568 NW 34ST, 33434 FL, USA",
           agenda_slug: "celu",
           email: "rola@gmail.com",
-          full_name: "Rolando",
+          full_name: "rolando",
           id: 54020484048,
           phone: "0424"
         },
@@ -14,15 +14,15 @@ const getState = ({ getStore, getActions, setStore }) => {
           address: "filadelfia",
           agenda_slug: "celu",
           email: "asdfsd@gmail.com",
-          full_name: "Jaun",
+          full_name: "jaun",
           id: 9143216526,
           phone: "042423231"
         },
         {
           address: "araguaney",
           agenda_slug: "celu",
-          email: "Miaud@gmail.com",
-          full_name: "Mias",
+          email: "miaud@gmail.com",
+          full_name: "mias",
           id: 1944156195,
           phone: "112631"
         },
@@ -30,7 +30,7 @@ const getState = ({ getStore, getActions, setStore }) => {
           address: "gordo",
           agenda_slug: "celu",
           email: "gordo@gmail.com",
-          full_name: "Gordo",
+          full_name: "gordo",
           id: 12341356195,
           phone: "04124612381"
         }
