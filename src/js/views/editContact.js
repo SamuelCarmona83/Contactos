@@ -15,8 +15,8 @@ export const EditContact = () => {
       <h1 className="h1 text-center">Edit a contact</h1>
       <form onSubmit={e => e.preventDefault()}>
         <Input data="Full_Name" value={specificContact.full_name} />
-        <Input data="Email" value={specificContact.email} />
-        <Input data="Phone" value={specificContact.phone} />
+        <Input data="Email" value={specificContact.email} type="email" />
+        <Input data="Phone" value={specificContact.phone} type="number" />
         <Input data="Address" value={specificContact.address} />
         <button className="btn btn-primary w-100 fw-bold">Save</button>
       </form>

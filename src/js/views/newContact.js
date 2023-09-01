@@ -11,7 +11,7 @@ export const NewContact = () => {
       <h1 className="h1 text-center">Add a new contact</h1>
       <form onSubmit={e => e.preventDefault()}>
         <Input data="Full_Name" />
-        <Input data="Email" />
+        <Input data="Email" type="email" />
         <Input data="Phone" type="number" />
         <Input data="Address" />
         <button className="btn btn-primary w-100 fw-bold">Save</button>

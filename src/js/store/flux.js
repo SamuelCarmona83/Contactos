@@ -5,8 +5,8 @@ const getState = ({ getStore, getActions, setStore }) => {
         {
           address: "47568 NW 34ST, 33434 FL, USA",
           agenda_slug: "celu",
-          email: "rola@gmail.com",
-          full_name: "rolando",
+          email: "rosa@gmail.com",
+          full_name: "rosana",
           id: 54020484048,
           phone: "04120173072"
         },
@@ -14,7 +14,7 @@ const getState = ({ getStore, getActions, setStore }) => {
           address: "filadelfia",
           agenda_slug: "celu",
           email: "mombola@gmail.com",
-          full_name: "mom",
+          full_name: "rafael",
           id: 9143216526,
           phone: "042423231"
         },
