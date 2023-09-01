@@ -34,9 +34,23 @@ const getState = ({ getStore, getActions, setStore }) => {
           id: 12341356195,
           phone: "04124612381"
         }
-      ].sort((a, b) => {
-        return a.full_name.localeCompare(b.full_name);
-      })
+      ]
+        .sort((a, b) => {
+          return a.full_name.localeCompare(b.full_name);
+        })
+        .map(contact => {
+          const firstNameLetter = contact.full_name.charAt(0).toUpperCase();
+          const restOfName = contact.full_name.slice(1).toLowerCase();
+          const firstAddressLetter = contact.address.charAt(0).toUpperCase();
+          const restOfAddress = contact.address.slice(1).toLowerCase();
+          const email = contact.email.toLowerCase();
+          return {
+            ...contact,
+            full_name: firstNameLetter + restOfName,
+            address: firstAddressLetter + restOfAddress,
+            email: email
+          };
+        })
     },
     actions: {
       // Use getActions to call a function within a fuction

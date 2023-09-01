@@ -12,7 +12,7 @@ export const NewContact = () => {
       <form onSubmit={e => e.preventDefault()}>
         <Input data="Full_Name" />
         <Input data="Email" />
-        <Input data="Phone" />
+        <Input data="Phone" type="number" />
         <Input data="Address" />
         <button className="btn btn-primary w-100 fw-bold">Save</button>
       </form>
