@@ -11,7 +11,9 @@ export const NewContact = () => {
       <h1 className="h1 text-center">Add a new contact</h1>
       <form onSubmit={e => e.preventDefault()}>
         <div className="my-3">
-          <label for="Name">Full Name</label>
+          <label htmlFor="Name" className="form-label">
+            Full Name
+          </label>
           <input
             className="w-100"
             placeholder="Full Name"
@@ -21,7 +23,9 @@ export const NewContact = () => {
           />
         </div>
         <div className="my-3">
-          <label for="Email">Email</label>
+          <label htmlFor="Email" className="form-label">
+            Email
+          </label>
           <input
             className="w-100"
             placeholder="Enter email"
@@ -31,7 +35,9 @@ export const NewContact = () => {
           />
         </div>
         <div className="my-3">
-          <label for="Phone">Phone</label>
+          <label htmlFor="Phone" className="form-label">
+            Phone
+          </label>
           <input
             className="w-100"
             placeholder="Enter phone"
@@ -41,7 +47,9 @@ export const NewContact = () => {
           />
         </div>
         <div className="my-3">
-          <label for="Address">Address</label>
+          <label htmlFor="Address" className="form-label">
+            Address
+          </label>
           <input
             className="w-100"
             placeholder="Enter address"
@@ -53,9 +61,7 @@ export const NewContact = () => {
 
         <button className="btn btn-primary w-100 fw-bold">Save</button>
       </form>
-      <Link to="/">
-        <p className="text-decoration-underline">Or get back to contacts</p>
-      </Link>
+      <Link to="/">Or get back to contacts</Link>
     </div>
   );
 };
