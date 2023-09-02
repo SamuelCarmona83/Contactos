@@ -75,7 +75,30 @@ const getState = ({ getStore, getActions, setStore }) => {
 
         //reset the global store
         setStore({ contacts: contacts });
+      },
+      newContact : ( currentContact ) => {
+
+        const store = getStore()
+
+        setStore({ contacts : [ ...store.contacts, currentContact ] })
+
+      },
+
+      editContact : ( currentContact ) => {
+
+        const store = getStore()
+
+        let searchContact = store.contacts.find( person => currentContact.id == person.id )
+
+        if(searchContact){
+          searchContact.full_name = currentContact.full_name
+          searchContact.email = currentContact.email
+          searchContact.address = currentContact.address
+          searchContact.phone = currentContact.phone
+        }
+
       }
+
     }
   };
 };

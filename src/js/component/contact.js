@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 export const Contact = ({ full_name, address, phone, email, id }) => {
+
+  const [ isOpen, setIsOpen ] = useState(true)
+
   return (
     <div className="contact border row rounded d-flex p-2 ">
       <div className="contact__image ms-2 col-md-3 col-4 p-0">
@@ -51,7 +54,7 @@ export const Contact = ({ full_name, address, phone, email, id }) => {
         <button
           type="button"
           data-bs-toggle="modal"
-          data-bs-target="#deleteContact"
+          data-bs-target={`#${full_name}`}
           style={{ height: "0px", border: "none", background: "none" }}>
           <i className="fa-solid fa-trash-can fs-4 delete mx-auto"></i>
         </button>
@@ -61,12 +64,13 @@ export const Contact = ({ full_name, address, phone, email, id }) => {
       </div>
       <div
         className="modal fade"
-        id="deleteContact"
+        id={full_name}
         tabIndex="-1"
         aria-labelledby="deleteContactLabel"
         aria-hidden="true"
         data-bs-backdrop="static"
         data-bs-keyboard="false">
+          
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">
